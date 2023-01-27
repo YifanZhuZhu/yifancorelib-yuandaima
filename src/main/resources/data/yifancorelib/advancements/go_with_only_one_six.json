@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "yifancorelib:six"
+    },
+    "title": "单走一个6",
+    "description": "卢姥爷曰：“单走一6者，傻*也”",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "go_with_only_one_six": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "yifancorelib:six"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 666666,
+    "recipes": [
+      "yifancorelib:five_nut_filling_crafting",
+      "yifancorelib:mooncake_crafting"
+    ]
+  }
+}
